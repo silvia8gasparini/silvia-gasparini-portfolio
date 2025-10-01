@@ -24,7 +24,6 @@ export default function Contacts() {
     }
   };
 
-  // Chiude il popup dopo 3 secondi
   useEffect(() => {
     if (popup) {
       const timer = setTimeout(() => setPopup(null), 3000);
