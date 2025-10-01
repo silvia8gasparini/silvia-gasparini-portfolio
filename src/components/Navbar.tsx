@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to="/" className="text-black hover:font-bold">Home</Link>
           <Link to="/About" className="text-black hover:font-bold">About</Link>
           <Link to="/Projects" className="text-black hover:font-bold">Projects</Link>
-           <Link to="/Contacts" className="text-black hover:font-bold">Contacts</Link>
+          <Link to="/Contacts" className="text-black hover:font-bold">Contacts</Link>
         </div>
 
         <div className="md:hidden">
@@ -28,6 +28,7 @@ const Navbar = () => {
           <Link to="/" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Home</Link>
           <Link to="/About" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">About</Link>
           <Link to="/Projects" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Projects</Link>
+          <Link to="/Contacts" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Contacts</Link>
         </div>
       )}
 
