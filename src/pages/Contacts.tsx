@@ -33,7 +33,7 @@ export default function Contacts() {
 
       <div className="flex gap-10 mb-12">
         <a
-          href={import.meta.env.VITE_LINKEDIN_URL}
+          href="https://www.linkedin.com/in/silviagasparini8"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 hover:scale-110 transition-transform"
@@ -45,7 +45,7 @@ export default function Contacts() {
           />
         </a>
         <a
-          href={import.meta.env.VITE_GITHUB_URL}
+          href="https://github.com/silvia8gasparini"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 hover:scale-110 transition-transform"
