@@ -1,11 +1,10 @@
-import {  useState, type FormEvent } from "react";
+import { useState, type FormEvent, useEffect } from "react";
 
 export default function Contacts() {
-  const [result, setResult] = useState<string | null>(null);
+  const [popup, setPopup] = useState<null | { type: "success" | "error"; msg: string }>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setResult("Invio in corso...");
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -18,49 +17,33 @@ export default function Contacts() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Messaggio inviato con successo!");
+      setPopup({ type: "success", msg: "Messaggio inviato con successo!" });
       form.reset();
     } else {
-      setResult("Errore nell'invio, riprova");
+      setPopup({ type: "error", msg: "Errore durante l'invio del messaggio." });
     }
   };
 
+  // Chiude il popup dopo 3 secondi
+  useEffect(() => {
+    if (popup) {
+      const timer = setTimeout(() => setPopup(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [popup]);
+
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-[url('/pictures/wallpaper.jpg')] bg-cover ">
-      <h1 className="text-4xl md:text-5xl font-explora font-bold text-black mb-10"style={{ textShadow: '0 0 6px rgba(202, 202, 202, 0.9)' }}>
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-[url('/pictures/wallpaper.jpg')] bg-cover ">
+      <h1
+        className="text-4xl md:text-5xl font-explora font-bold text-black mb-10"
+        style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}
+      >
         Contattami
       </h1>
 
-      <div className="flex gap-10 mb-12">
-        <a
-          href="https://www.linkedin.com/in/silviagasparini8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 hover:scale-110 transition-transform"
-        >
-          <img
-            src="/icons/linkedin.png"
-            alt="LinkedIn"
-            className="w-full h-full object-contain"
-          />
-        </a>
-        <a
-          href="https://github.com/silvia8gasparini"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 hover:scale-110 transition-transform"
-        >
-          <img
-            src="/icons/github.svg"
-            alt="GitHub"
-            className="w-full h-full object-contain"
-          />
-        </a>
-      </div>
-
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md rounded-lg shadow-lg p-8 space-y-4 font-ysabeau text-xl"
+        className="w-full max-w-md rounded-lg shadow-lg p-8 space-y-4 font-ysabeau text-xl bg-white/80 backdrop-blur"
       >
         <input
           type="hidden"
@@ -104,11 +87,19 @@ export default function Contacts() {
         >
           Invia
         </button>
-
-        {result && (
-          <p className="text-center text-sm mt-3 text-gray-700">{result}</p>
-        )}
       </form>
+
+      {popup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+          <div
+            className={`px-6 py-4 rounded-lg shadow-lg text-center text-white font-ysabeau text-lg ${
+              popup.type === "success" ? "bg-green-100 border border-green-600 text-green-600" : "bg-red-100 border border-red-600 text-red-600"
+            }`}
+          >
+            {popup.type === "success"} {popup.msg}
+          </div>
+        </div>
+      )}
     </section>
   );
 }
