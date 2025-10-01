@@ -40,6 +40,33 @@ export default function Contacts() {
         Contattami
       </h1>
 
+<div className="flex gap-10 mb-12">
+        <a
+          href="https://www.linkedin.com/in/silviagasparini8/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 hover:scale-110 transition-transform"
+        >
+          <img
+            src="/icons/linkedin.png"
+            alt="LinkedIn"
+            className="w-full h-full object-contain"
+          />
+        </a>
+        <a
+          href="https://github.com/silvia8gasparini"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 hover:scale-110 transition-transform"
+        >
+          <img
+            src="/icons/github.svg"
+            alt="GitHub"
+            className="w-full h-full object-contain"
+          />
+        </a>
+      </div>
+
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-md rounded-lg shadow-lg p-8 space-y-4 font-ysabeau text-xl bg-white/80 backdrop-blur"

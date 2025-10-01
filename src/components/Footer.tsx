@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-[#f6f3ee] to-white shadow-none text-black text-3xl border-t border-gray-200 font-explora">
+    <footer className="bg-gradient-to-t from-[#f6f3ee] to-white shadow-none text-black text-2xl border-t border-gray-200 font-explora">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
         
         <p className="mb-2 md:mb-0">
