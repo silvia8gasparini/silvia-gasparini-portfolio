@@ -5,7 +5,7 @@ const projects = [
     title: "しおりと色の息吹 - Il respiro dei colori tra le pagine",
     description:
       "Una web app che intreccia libri, tè e stagioni giapponesi. Il mio capstone project: un e-commerce librario ispirato all’estetica wabi-sabi, dove ogni colore racconta una storia.",
-    image: "/public/projects/capstone.png",
+    image: "/projects/capstone.png",
     github: "https://github.com/silvia8gasparini/Shiori-to-iro-no-ibuki_Frontend_Capstone_Project",
     live: "https://shiori-to-iro-no-ibuki-frontend-cap.vercel.app/",
   },
@@ -69,7 +69,7 @@ const Projects = () => {
                     className="flex items-center gap-2 text-gray-600 hover:text-black transition"
                   >
                     <img
-                      src="/public/icons/github.svg"
+                      src="/icons/github.svg"
                       alt="GitHub"
                       className="w-6 h-6 color-red-800"
                     />
@@ -82,7 +82,7 @@ const Projects = () => {
                     className="flex items-center gap-2 text-gray-600 hover:text-black transition"
                   >
                     <img
-                      src="/public/icons/vercel.svg"
+                      src="/icons/vercel.svg"
                       alt="Live"
                       className="w-6 h-6"
                     />
