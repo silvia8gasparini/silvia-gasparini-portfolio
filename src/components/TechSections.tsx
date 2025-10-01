@@ -23,8 +23,8 @@ const techStack = {
     { name: "PostgresSQL", src: "/logos/PostgresSQL.svg" },
   ],
   "Tools": [
-    { name: "VS Code", src: "/public/logos/Vscode.png" },
-    { name: "IntelliJ", src: "/public/logos/Intellij.svg.png" },
+    { name: "VS Code", src: "/logos/Vscode.png" },
+    { name: "IntelliJ", src: "/logos/Intellij.svg.png" },
     { name: "Postman", src: "/logos/Postman.svg" },
     { name: "Git", src: "/logos/Git.svg" },
     { name: "GitHub", src: "/logos/GitHub.svg" },

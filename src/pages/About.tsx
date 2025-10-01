@@ -53,7 +53,7 @@ const IntroSection = () => {
   exit={{ opacity: 0, scale: 0.8 }}
   transition={{ duration: 1 }}
 >
-  <span className="text-xl md:text-7xl font-bold text-black text-center">
+  <span className="text-5xl md:text-7xl font-bold text-black text-center">
     Full-Stack Developer
   </span>
 </motion.span>
