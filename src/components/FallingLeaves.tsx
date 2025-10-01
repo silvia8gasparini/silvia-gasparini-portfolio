@@ -1,7 +1,7 @@
-import '../FallingLeaves.css';
+import '../styles/FallingLeaves.css';
 
 const FallingLeaves = () => {
-  const leavesImgs = ["/leaves/leaves1.png", "/leaves/leaves2.png", "/leaves/leaves3.png", "/public/leaves/leaves4.png"];
+  const leavesImgs = ["/leaves/leaves1.png", "/leaves/leaves2.png", "/leaves/leaves3.png", "/leaves/leaves4.png"];
 
   const renderLeaves = (setClass: string) => (
     <div className={`set ${setClass}`}>
