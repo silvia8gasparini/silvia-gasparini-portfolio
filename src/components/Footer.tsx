@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
         
         <p className="mb-2 md:mb-0">
-          © {new Date().getFullYear()} Silvia Gasparini — Tutti i diritti riservati
+          © {new Date().getFullYear()} Silvia Gasparini — All rights reserved
         </p>
 
         <div className="flex space-x-4">

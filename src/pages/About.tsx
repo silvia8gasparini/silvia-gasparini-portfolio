@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import TechSections from "../components/TechSections";
+import { Trans, useTranslation } from "react-i18next";
 
 const About = () => {
   const [showContent, setShowContent] = useState(false);
@@ -33,6 +34,7 @@ const About = () => {
 };
 
 const IntroSection = () => {
+  const { t } = useTranslation();
   return (
     <motion.div
       className="flex flex-col items-center gap-6 pt-5 -mt-5"
@@ -43,7 +45,7 @@ const IntroSection = () => {
     >
 
  <h1 className="text-4xl sm:text-5xl md:text-5xl text-center text-black font-explora font-bold" style={{ textShadow: '0 0 6px rgba(202, 202, 202, 0.9)' }}>
-        Piacere di conoscerti! Sono Silvia!
+        {t("about.intro.greeting")}
       </h1>
 
      <motion.span
@@ -53,8 +55,8 @@ const IntroSection = () => {
   exit={{ opacity: 0, scale: 0.8 }}
   transition={{ duration: 1 }}
 >
-  <span className="text-5xl md:text-7xl font-bold text-black text-center">
-    Full-Stack Developer
+  <span className="text-xl md:text-7xl font-bold text-black text-center">
+    {t("about.intro.role")}
   </span>
 </motion.span>
 
@@ -64,21 +66,21 @@ const IntroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
         >
-          Eclettica
+        {t("about.intro.words.0")}
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3 }}
         >
-          Creativa
+        {t("about.intro.words.1")}
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 4 }}
         >
-          Determinata
+        {t("about.intro.words.2")}
         </motion.span>
       </div>
     </motion.div>
@@ -109,13 +111,16 @@ const ContentSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
+         
           <h2 className="text-5xl font-explora font-bold text-red-800 md:w-1/3 text-center md:text-center md:pl-8"style={{ textShadow: '0 0 6px rgba(208, 172, 172, 0.9)' }}>
-            Passato
+           <Trans i18nKey="about.past.title">Passato</Trans>
           </h2>
+
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
-          Sono <strong>laureata in Lettere Moderne</strong> all'Università di Padova, con un breve epilogo a Ca' Foscari.  
+         <Trans i18nKey="about.past.text">Sono <strong>laureata in Lettere Moderne</strong> all'Università di Padova, con un breve epilogo a Ca' Foscari.  
           <br className="hidden md:block" />
           Ho lavorato tra <strong>archivi, biblioteche e uffici</strong>. Un mondo fatto di ordine e memoria, che mi ha insegnato <strong>rigore, pazienza e attenzione al dettaglio</strong>, ma nel tempo ho sentito il bisogno di rimettermi in discussione.
+          </Trans> 
           </p>
         </motion.div>
 
@@ -126,13 +131,21 @@ const ContentSection = () => {
           transition={{ duration: 1.2 }}
         >
           <h2 className="text-5xl font-explora font-bold text-red-800 md:w-1/3 text-center md:text-center md:pl-8"style={{ textShadow: '0 0 6px rgba(208, 172, 172, 0.9)' }}>
-            Presente
+            <Trans i18nKey="about.present.title">Presente</Trans>
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
-          Ho da poco concluso un <strong>master Full-Stack Developer</strong> presso <strong>EPICODE</strong>,  
-          ma sto continuando il mio percorso per <strong>specializzarmi nel front-end</strong>.  
-          <br className="hidden md:block" />
-          Voglio consolidare le mie competenze tecniche e progettuali in contesti che abbiano un’anima: <strong>ambienti etici, inclusivi, orientati all’innovazione consapevole</strong>.
+          <Trans i18nKey="about.present.text"components={{
+            1: <strong />,
+            2: <strong />,
+            3: <strong />,
+            4: <br className="hidden md:block" />,
+            5: <strong />,
+            }}>
+            Ho da poco concluso un <strong /> presso <strong />, ma sto continuando il mio percorso per <strong />.
+            <br className="hidden md:block" />
+            <br className="hidden md:block" />
+            Voglio consolidare le mie competenze tecniche e progettuali in contesti che abbiano un’anima:<strong />.
+          </Trans>
           </p>
         </motion.div>
 
@@ -143,15 +156,26 @@ const ContentSection = () => {
           transition={{ duration: 1.4 }}
         >
           <h2 className="text-5xl font-explora font-bold text-red-800 md:w-1/3 text-center md:text-center md:pl-8 pb-15"style={{ textShadow: '0 0 6px rgba(208, 172, 172, 0.9)' }}>
-            Futuro
+             <Trans i18nKey="about.future.title">Futuro</Trans>
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left">
-          Il mio obiettivo è focalizzato sul <strong>design UX/UI</strong>, come strumento per <strong>mettere le persone al centro</strong>.
-          <br className="hidden md:block" />
-          Coniugo il mio background umanistico con le competenze tecniche per progettare <strong>interfacce accessibili, inclusive e significative</strong>, capaci di dialogare con chi le usa.
-          <br className="hidden md:block" />
-          Sogno un web meno standardizzato e più empatico, dove <strong>innovazione e creatività</strong> abbiano lo spazio per esprimersi fuori dagli schemi.  
-          Voglio crescere come UX/UI Designer per rendere il digitale <strong>un posto più umano</strong>.
+          <Trans i18nKey="about.future.text" components={{
+            1: <strong />,
+            2: <strong />,
+            3: <br className="hidden md:block" />,
+            4: <strong />,
+            5: <strong />,
+            6: <strong />
+            }}>
+            Il mio obiettivo è focalizzato sul <strong />, come strumento per <strong />.
+            <br className="hidden md:block" />
+            <br className="hidden md:block" />
+            Coniugo il mio background umanistico con le competenze tecniche per progettare<strong />, capaci di dialogare con chi le usa.
+            <br className="hidden md:block" />
+            <br className="hidden md:block" />
+            Sogno un web meno standardizzato e più empatico, dove <strong /> abbiano lo spazio per esprimersi fuori dagli schemi.
+            Voglio crescere come UX/UI Designer per rendere il digitale <strong />.
+            </Trans>
           </p>
         </motion.div>
            

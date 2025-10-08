@@ -30,8 +30,10 @@
   },
   "dependencies": {
     "framer-motion": "^12.23.22",
+    "i18next": "^25.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^16.0.0",
     "react-router-dom": "^7.9.3"
   }
 }

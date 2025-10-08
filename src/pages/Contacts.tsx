@@ -1,6 +1,8 @@
 import { useState, type FormEvent, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contacts() {
+  const { t } = useTranslation();
   const [popup, setPopup] = useState<null | { type: "success" | "error"; msg: string }>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -37,7 +39,7 @@ export default function Contacts() {
         className="text-4xl md:text-5xl font-explora font-bold text-black mb-10"
         style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}
       >
-        Contattami
+        {t("contacts.title")} 
       </h1>
 
 <div className="flex gap-10 mb-12">
@@ -78,7 +80,7 @@ export default function Contacts() {
         />
 
         <div>
-          <label className="block mb-1 font-medium">Nome</label>
+          <label className="block mb-1 font-medium">{t("contacts.name")}</label>
           <input
             type="text"
             name="name"
@@ -88,7 +90,7 @@ export default function Contacts() {
         </div>
 
         <div>
-          <label className="block mb-1 font-medium">Email</label>
+          <label className="block mb-1 font-medium">{t("contacts.email")}</label>
           <input
             type="email"
             name="email"
@@ -98,7 +100,7 @@ export default function Contacts() {
         </div>
 
         <div>
-          <label className="block mb-1 font-medium">Messaggio</label>
+          <label className="block mb-1 font-medium">{t("contacts.message")}</label>
           <textarea
             name="message"
             required
@@ -111,7 +113,7 @@ export default function Contacts() {
           type="submit"
           className="bg-black text-white px-6 py-2 rounded hover:bg-red-800 transition"
         >
-          Invia
+          {t("contacts.button")}
         </button>
       </form>
 

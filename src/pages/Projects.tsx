@@ -1,26 +1,24 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
+    id: "capstone",
     title: "しおりと色の息吹 - Il respiro dei colori tra le pagine",
-    description:
-      "Una web app che intreccia libri, tè e stagioni giapponesi. Il mio capstone project: un e-commerce librario ispirato all’estetica wabi-sabi, dove ogni colore racconta una storia.",
     image: "/projects/capstone.png",
     github: "https://github.com/silvia8gasparini/Shiori-to-iro-no-ibuki_Frontend_Capstone_Project",
     live: "https://shiori-to-iro-no-ibuki-frontend-cap.vercel.app/",
   },
   {
+    id: "genkitenki",
     title: "元気天気 - Genki Tenki Weather App",
-    description:
-      "Una web app meteo ispirata all’universo Ghibli. Seleziona un continente, scegli una città, e scopri che tempo fa con Totoro! Realizzata con React, Bootstrap e l’API di OpenWeatherMap.",
     image: "/projects/genkitenki.png",
     github: "https://github.com/silvia8gasparini/Genki-Tenki-Weather",
     live: "https://genki-tenki-weather.vercel.app/",
   },
   {
+    id: "applemusic",
     title: "Apple Music Clone",
-    description:
-      "Un clone responsive di Apple Music, con interfaccia fluida e dark mode. Realizzato con React, Redux e Bootstrap.",
     image: "/projects/applemusic.png",
     github: "https://github.com/silvia8gasparini/Apple-Music-Clone",
     live: "https://apple-music-clone-lime.vercel.app/",
@@ -28,6 +26,7 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <section className="min-h-screen px-6 py-16 bg-[url('/pictures/wallpaper.jpg')] bg-cover text-gray-800">
       <div className="max-w-5xl mx-auto">
@@ -58,7 +57,7 @@ const Projects = () => {
                   {project.title}
                 </h2>
                 <p className="text-lg font-ysabeau text-gray-700 leading-relaxed whitespace-pre-line">
-                  {project.description}
+                  {t(`projects.${project.id}`)}
                 </p>
 
                 <div className="flex justify-center gap-6 mt-4">
