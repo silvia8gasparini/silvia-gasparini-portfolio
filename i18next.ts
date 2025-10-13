@@ -27,8 +27,7 @@ i18next.use(initReactI18next).init({
             },
         future: {
             title: "Futuro",
-            text: "Il mio obiettivo è focalizzato sul <1>design UX/UI</1>, come strumento per <2>mettere le persone al centro</2>.<3/><3/>Coniugo il mio background umanistico con le competenze tecniche per progettare <4>interfacce accessibili, inclusive e significative</4>, capaci di dialogare con chi le usa.<3/><3/>Sogno un web meno standardizzato e più empatico, dove <5>innovazione e creatività</5> abbiano lo spazio per esprimersi fuori dagli schemi. Voglio crescere come UX/UI Designer per rendere il digitale <6>un posto più umano</6>."
-          }
+            text: "Il mio obiettivo è focalizzato sul <1>front-end</1> e sul <1>design UX/UI</1>: voglio poter dare forma concreta alle mie idee progettuali, curando non solo il <2>cosa</2> e il <2>perché</2>, ma anche il <2>come</2>. <3/><3/>Coniugo il mio background umanistico con le competenze tecniche per progettare <4>interfacce accessibili, inclusive e significative</4>, capaci di dialogare con chi le usa.<3/><3/>Sogno un web meno standardizzato e più empatico, dove <5>innovazione e creatività</5> abbiano lo spazio per esprimersi fuori dagli schemi. Voglio crescere come UX/UI Designer e come front-end developer per rendere il digitale <6>un posto più umano</6>."          }
         },
         projects: {
           capstone: "Una web app che intreccia libri, tè e stagioni giapponesi. Il mio capstone project: un e-commerce librario ispirato all’estetica wabi-sabi, dove ogni colore racconta una storia.",
@@ -67,7 +66,7 @@ i18next.use(initReactI18next).init({
           },
           future: {
             title: "Future",
-            text: "My goal is centered on <1>UX/UI design</1>, as a way to <2>put people at the heart</2> of the digital experience.<3/><3/>I combine my humanistic background with technical skills to design <4>accessible, inclusive, and meaningful interfaces</4> that truly connect with those who use them.<3/><3/>I dream of a web that is less standardized and more empathetic, where <5>innovation and creativity</5> have the freedom to express themselves beyond convention. I aspire to grow as a UX/UI Designer and make the digital world <6>a more human place</6>."
+            text:"My goal is focused on <1>front-end</1> and <1>UX/UI design</1>: I want to give concrete shape to my design ideas, taking care not only of the <2>what</2> and the <2>why</2>, but also the <2>how</2>. <3/><3/>I combine my humanistic background with technical skills to design <4>accessible, inclusive, and meaningful interfaces</4> that can truly connect with those who use them.<3/><3/>I dream of a web that is less standardized and more empathetic, where <5>innovation and creativity</5> have the freedom to express themselves beyond conventions. I want to grow as a UX/UI Designer and as a front-end developer to make the digital world <6>a more human place</6>."
           }
         },
          projects: {
@@ -107,7 +106,7 @@ i18next.use(initReactI18next).init({
           },
           future: {
             title: "未来",
-            text: "私の目標は<1>UX/UIデザイン</1>に焦点を当て、<2>人を中心に据えた体験</2>を創り出すことです。<3/><3/>人文学の背景と技術的スキルを融合し、<4>アクセシブルで包括的、そして意味のあるインターフェース</4>を設計することを目指しています。<3/><3/>私は、<5>イノベーションと創造性</5>が型にはまらず自由に息づく、より共感的なウェブを夢見ています。デジタルの世界を<6>より人間的な場所</6>にするために、UX/UIデザイナーとして成長していきたいと願っています。"
+            text:"私の目標は、<1>フロントエンド</1>と<1>UX/UIデザイン</1>に焦点を当てることです。<2>何を</2>、<2>なぜ</2>だけでなく、<2>どのように</2>をも大切にしながら、自分のアイデアに具体的な形を与えたいと考えています。<3/><3/>人文学の背景と技術的なスキルを融合させ、<4>誰もが使いやすく、包摂的で、意味のあるインターフェース</4>を設計しています。それらが使う人と対話できるように。<3/><3/>私は、<5>革新と創造性</5>が型にとらわれずに表現できる、より共感的で標準化されすぎていないウェブを夢見ています。UX/UIデザイナーとして、そしてフロントエンドデベロッパーとして成長し、デジタルを<6>より人間的な場所</6>にしていきたいです。"
           }
         },
          projects: {

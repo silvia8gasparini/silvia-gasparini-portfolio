@@ -5,6 +5,7 @@ import { Trans, useTranslation } from "react-i18next";
 
 const About = () => {
   const [showContent, setShowContent] = useState(false);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,16 +18,16 @@ const About = () => {
   return (
     <section className="min-h-screen bg-[url('/pictures/wallpaper.jpg')] bg-cover flex flex-col items-center justify-center px-8 pt-15 pb-4 text-gray-800 overflow-hidden">
 
-     <AnimatePresence mode="wait">
-      {!showContent ? (
-    <IntroSection key="intro" />
-      ) : (
-    <> <ContentSection key="content" />
-    <TechSections key="techsections" />
+    <AnimatePresence mode="wait">
+  {!showContent ? (
+    <IntroSection key={`intro-${i18n.language}`} />
+  ) : (
+    <>
+      <ContentSection key={`content-${i18n.language}`} />
+      <TechSections key={`tech-${i18n.language}`} />
     </>
-   
-    )}
-    </AnimatePresence>
+  )}
+</AnimatePresence>
 
     </section>
 
@@ -140,6 +141,7 @@ const ContentSection = () => {
             3: <strong />,
             4: <br className="hidden md:block" />,
             5: <strong />,
+            6: <strong />,
             }}>
             Ho da poco concluso un <strong /> presso <strong />, ma sto continuando il mio percorso per <strong />.
             <br className="hidden md:block" />
@@ -167,7 +169,7 @@ const ContentSection = () => {
             5: <strong />,
             6: <strong />
             }}>
-            Il mio obiettivo è focalizzato sul <strong />, come strumento per <strong />.
+            Il mio obiettivo è focalizzato sul <strong /> e sul <strong />,: voglio poter dare forma concreta alle mie idee progettuali, curando non solo il <strong /> e il <strong />, ma anche il <strong />.
             <br className="hidden md:block" />
             <br className="hidden md:block" />
             Coniugo il mio background umanistico con le competenze tecniche per progettare<strong />, capaci di dialogare con chi le usa.
