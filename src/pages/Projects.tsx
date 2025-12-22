@@ -28,7 +28,7 @@ const projects = [
 const Projects = () => {
   const { t } = useTranslation();
   return (
-    <section className="min-h-screen px-6 py-16 bg-[url('/pictures/wallpaper.jpg')] bg-cover text-gray-800">
+    <section className="min-h-screen px-6 py-16 bg-[#fffdf9] text-gray-800">
       <div className="max-w-5xl mx-auto">
 
         <div className="flex flex-col gap-20">

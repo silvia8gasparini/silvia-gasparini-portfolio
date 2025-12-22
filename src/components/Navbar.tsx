@@ -7,7 +7,7 @@ const Navbar = () => {
   const { i18n } = useTranslation();
 
   return (
-<nav className="bg-gradient-to-t from-[#f6f3ee] to-white shadow-none sticky top-0 z-50 font-explora border-b border-gray-200">
+<nav className="bg-gradient-to-t from-[#fffdf9] to-white shadow-none sticky top-0 z-50 font-explora border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
         <Link to="/" className="text-3xl sm:text-4xl md:text-4xl text-black">Silvia Gasparini - Full-Stack Developer</Link>
 
