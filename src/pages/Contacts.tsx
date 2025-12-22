@@ -34,7 +34,7 @@ export default function Contacts() {
   }, [popup]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-[url('/pictures/wallpaper.jpg')] bg-cover ">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-[#fffdf9]">
       <h1
         className="text-4xl md:text-5xl font-explora font-bold text-black mb-10"
         style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}
@@ -71,7 +71,7 @@ export default function Contacts() {
 
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md rounded-lg shadow-lg p-8 space-y-4 font-ysabeau text-xl bg-white/80 backdrop-blur"
+        className="w-full max-w-md rounded-lg shadow-lg p-8 space-y-4 font-ysabeau text-xl bg-[#fffdfa] backdrop-blur"
       >
         <input
           type="hidden"
