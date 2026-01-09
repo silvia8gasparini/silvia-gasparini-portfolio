@@ -11,14 +11,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
         <Link to="/" className="text-3xl sm:text-4xl md:text-4xl text-black">Silvia Gasparini - Full-Stack Developer</Link>
 
-        <div className="hidden md:flex space-x-6 text-4xl">
+        <div className="hidden lg:flex space-x-6 text-4xl">
           <Link to="/" className="text-black hover:font-bold">Home</Link>
           <Link to="/About" className="text-black hover:font-bold">About</Link>
           <Link to="/Projects" className="text-black hover:font-bold">Projects</Link>
            <Link to="/Contacts" className="text-black hover:font-bold">Contacts</Link>
         </div>
 
-        <div className="absolute right-4 hidden md:flex gap-2">{["it", "en", "jp"].map((lng) => (
+        <div className="absolute right-4 hidden lg:flex gap-2">{["it", "en", "jp"].map((lng) => (
         <button key={lng} onClick={() => i18n.changeLanguage(lng)} 
           className={`min-w-[33px] px-2 py-1 text-sm font-bold rounded-full border transition-all ${i18n.language === lng
           ? "bg-black text-white border-black"
@@ -30,7 +30,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-3xl text-black focus:outline-none font-explora">
             Menu
           </button>
@@ -38,7 +38,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden flex flex-col space-y-2 px-4 pb-4 text-3xl">
+        <div className="lg:hidden flex flex-col space-y-2 px-4 pb-4 text-3xl">
           <Link to="/" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Home</Link>
           <Link to="/About" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">About</Link>
           <Link to="/Projects" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Projects</Link>
