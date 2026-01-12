@@ -28,7 +28,7 @@ const projects = [
 const Projects = () => {
   const { t } = useTranslation();
   return (
-    <section className="min-h-screen px-6 py-16 bg-[#fffdf9] text-gray-800">
+    <section className="min-h-screen px-6 py-16 bg-[#fffffd] text-gray-800">
       <div className="max-w-5xl mx-auto">
 
         <div className="flex flex-col gap-20">
@@ -53,7 +53,7 @@ const Projects = () => {
               </div>
 
               <div className="w-full md:w-1/2">
-                <h2 className="text-4xl font-bonheur text-red-800 mb-4" style={{ textShadow: '0 0 5px rgba(183, 157, 157, 0.9)' }}>
+                <h2 className="text-4xl font-bonheur text-#001f73 mb-4" style={{ textShadow: '0 0 5px rgba(39, 159, 245, 0.46)' }}>
                   {project.title}
                 </h2>
                 <p className="text-lg font-ysabeau text-gray-700 leading-relaxed whitespace-pre-line">

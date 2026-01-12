@@ -1,10 +1,10 @@
-$fox-orange: #dc4614;
-$fox-orange-head: linear-gradient(to bottom, #fba039 31%,#dc4614 100%);
-$fox-orange-body: linear-gradient(to top, #dc4614 0%,  #fdb159 49%);
-$fox-tail-before: linear-gradient(25deg, #dc4614 0%, #fdb159 55%);
-$fox-tail-after: linear-gradient(25deg, #dc4614 0%,  #fdb159 60%);
-$fox-brown: #494139;
-$fox-cream: #fffbf4;
+$fox-orange: #ffffff;
+$fox-orange-head: linear-gradient(to bottom, #fff8f0 31%,#fff0ec 100%);
+$fox-orange-body: linear-gradient(to top, #fff8f0 0%,  #fff0ec 49%);
+$fox-tail-before: linear-gradient(25deg,  #fff8f0 0%,  #fff0ec 55%);
+$fox-tail-after: linear-gradient(25deg,  #fff8f0 0%,  #fff0ec 60%);
+$fox-brown: #9d9283;
+$fox-cream: #ffffff;
 $fox-black: #5e5e5e;
 $fox-pink: #ffc0cb;
 $black: #000000;
@@ -57,6 +57,7 @@ html{
         top: -20px;
         background-color: lighten($fox-brown, 20%);
         z-index: 1;
+        border: 0.1px solid #c4c4c4;
 
         &:before {
           content: '';
@@ -101,6 +102,7 @@ html{
         border-radius: 100% 100% 20px 20px;
         left: 10px;
         z-index: 2;
+        border: 0.1px solid #c4c4c4;
       }
 
       &__eye {
@@ -153,6 +155,7 @@ html{
         background-color: $fox-cream;
         top: 38px;
         z-index: 3;
+        border: 0.1px solid #c4c4c4;
 
         &:before {
           content: '';
@@ -204,7 +207,7 @@ html{
           height: 80%;
           width: 70%;
           border-radius: 40% 40% 90% 90% / 90% 90% 90% 90%;
-          background-color: darken($fox-cream, 5%);
+          background-color: $fox-cream;
           position: absolute;
           left: 15%;
           top: 0;
