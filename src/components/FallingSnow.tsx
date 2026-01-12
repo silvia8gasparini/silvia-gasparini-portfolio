@@ -6,7 +6,7 @@ const FallingSnow = () => {
   const renderSnow = (setClass: string) => (
     <div className={`set ${setClass}`}>
       {Array.from({ length: 8 }).map((_, i) => (
-        <div className="leaves" key={`${setClass}-${i}`}>
+        <div className="snow" key={`${setClass}-${i}`}>
           <img src={snowImgs[i % 4]} alt="snow" />
         </div>
       ))}
