@@ -16,7 +16,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-[#fffffd] flex flex-col items-center justify-center px-8 pt-15 pb-4 text-gray-800 overflow-hidden">
+    <section className="min-h-screen bg-white flex flex-col items-center justify-center px-8 pt-15 pb-4 text-gray-800 overflow-hidden">
 
     <AnimatePresence mode="wait">
   {!showContent ? (
@@ -45,12 +45,12 @@ const IntroSection = () => {
       transition={{ duration: 1 }}
     >
 
- <h1 className="text-4xl sm:text-5xl md:text-5xl text-center text-black font-explora font-bold" style={{ textShadow: '0 0 6px rgba(202, 202, 202, 0.9)' }}>
+ <h1 className="text-5xl sm:text-5xl md:text-5xl text-center text-black font-tangerine font-bold" style={{ textShadow: '0 0 6px rgba(202, 202, 202, 0.9)' }}>
         {t("about.intro.greeting")}
       </h1>
 
      <motion.span
-  className="flex items-center justify-center font-explora"
+  className="flex items-center justify-center font-tangerine"
   initial={{ opacity: 0, scale: 0.8 }}
   animate={{ opacity: 1, scale: 1 }}
   exit={{ opacity: 0, scale: 0.8 }}
@@ -61,7 +61,7 @@ const IntroSection = () => {
   </span>
 </motion.span>
 
-      <div className="flex gap-4 text-4xl sm:text-5xl md:text-5xl text-#001f73 font-explora font-bold" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+      <div className="flex gap-4 text-4xl sm:text-5xl md:text-5xl text-#001f73 font-tangerine font-bold" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -113,7 +113,7 @@ const ContentSection = () => {
           transition={{ duration: 1 }}
         >
          
-          <h2 className="text-5xl font-explora font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+          <h2 className="text-5xl font-tangerine font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
            <Trans i18nKey="about.past.title">Passato</Trans>
           </h2>
 
@@ -131,7 +131,7 @@ const ContentSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <h2 className="text-5xl font-explora font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+          <h2 className="text-5xl font-tangerine font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
             <Trans i18nKey="about.present.title">Presente</Trans>
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
@@ -157,7 +157,7 @@ const ContentSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4 }}
         >
-          <h2 className="text-5xl font-explora font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8 pb-15" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+          <h2 className="text-5xl font-tangerine font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8 pb-15" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
              <Trans i18nKey="about.future.title">Futuro</Trans>
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left">

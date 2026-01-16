@@ -34,9 +34,9 @@ export default function Contacts() {
   }, [popup]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-[#fffffd]">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-white">
       <h1
-        className="text-4xl md:text-5xl font-explora font-bold text-black mb-10"
+        className="text-4xl md:text-5xl font-tangerine font-bold text-black mb-10"
         style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}
       >
         {t("contacts.title")} 

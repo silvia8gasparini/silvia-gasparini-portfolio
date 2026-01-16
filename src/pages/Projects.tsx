@@ -53,7 +53,7 @@ const Projects = () => {
               </div>
 
               <div className="w-full md:w-1/2">
-                <h2 className="text-4xl font-bonheur text-#001f73 mb-4" style={{ textShadow: '0 0 5px rgba(39, 159, 245, 0.46)' }}>
+                <h2 className="text-4xl font-tangerine text-#001f73 mb-4" style={{ textShadow: '0 0 5px rgba(39, 159, 245, 0.46)' }}>
                   {project.title}
                 </h2>
                 <p className="text-lg font-ysabeau text-gray-700 leading-relaxed whitespace-pre-line">

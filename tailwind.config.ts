@@ -13,7 +13,8 @@ const config: Config = {
         bonheur: ['"Bonheur Royale"', 'cursive'],
         explora: ['"Explora"', 'cursive'],
         pompiere: ['"Pompiere"', 'sans-serif'],
-        ysabeau: ['"Ysabeau Infant"', 'sans-serif']
+        ysabeau: ['"Ysabeau Infant"', 'sans-serif'],
+        tangerine: ["Tangerine", 'cursive'],
       },
     },
   },
