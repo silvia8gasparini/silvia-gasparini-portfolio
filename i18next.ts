@@ -15,7 +15,7 @@ i18next.use(initReactI18next).init({
           intro: {
             greeting: "Piacere di conoscerti! Sono Silvia!",
             role: "Full-Stack Developer",
-            words: ["Eclettica", "Creativa", "Visionaria"]
+            words: ["Creativa", "Eclettica", "Visionaria"]
           },
         past: {
             title: "Passato",
@@ -54,7 +54,7 @@ i18next.use(initReactI18next).init({
           intro: {
             greeting: "Nice to meet you! I'm Silvia!",
             role: "Full-Stack Developer",
-            words: ["Eclectic", "Creative", "Visionary"]
+            words: ["Creative", "Eclectic", "Visionary"]
           },
           past: {
             title: "Past",
@@ -94,7 +94,7 @@ i18next.use(initReactI18next).init({
           intro: {
             greeting: "はじめまして！シルヴィアです！",
             role: "Full-Stack Developer",
-            words: ["多才", "クリエイティブ", "先見的"]
+            words: ["クリエイティブ", "多才", "先見的"]
           },
           past: {
             title: "過去",
