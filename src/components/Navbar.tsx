@@ -9,7 +9,13 @@ const Navbar = () => {
   return (
 <nav className=" bg-white shadow-none sticky top-0 z-50 font-tangerine border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
-        <Link to="/" className="text-2xl sm:text-4xl md:text-4xl text-black" style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}>Silvia Gasparini - Full-Stack Developer</Link>
+        
+        <Link to="/" className="flex items-center space-x-3">
+        <img
+        src="/icons/favicon_sg.png"
+        alt="logo"
+        className="h-9 w-auto"/>        
+        <span className="text-2xl sm:text-4xl md:text-4xl text-black" style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}>Silvia Gasparini - Full-Stack Developer</span></Link>
 
         <div className="hidden lg:flex space-x-6 text-4xl">
           <Link to="/" className="text-black hover:font-bold">Home</Link>
