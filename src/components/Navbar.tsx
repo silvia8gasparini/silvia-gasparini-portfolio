@@ -48,7 +48,7 @@ const Navbar = () => {
        
 
       {isOpen && (
-        <div className="lg:hidden flex flex-col space-y-3 px-4 pb-4 text-5xl-ricustom">
+        <div className="lg:hidden flex flex-col space-y-4 px-4 pb-4 text-5xl-ricustom">
           <Link to="/" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Home</Link>
           <Link to="/About" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">About</Link>
           <Link to="/Projects" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Projects</Link>
