@@ -19,6 +19,14 @@ const config: Config = {
         baskerville: ['"Baskervville SC"', 'serif'],
         bellefair: ['"Bellefair"', 'serif'],
       },
+      fontSize: {
+      '5xl-custom': ['1.4rem', { lineHeight: '1.1' }],
+      '5xl-ricustom': ['1.2rem', { lineHeight: '1.1' }],
+      '4xl-custom': ['2.6rem', { lineHeight: '1.1' }],
+      },  
+      backgroundImage: {
+      'radial-custom': 'radial-gradient(circle, #e5f4ff 0%, #eaf6ff 10%, #ffffff 100%)',
+      },
     },
   },
   plugins: [],

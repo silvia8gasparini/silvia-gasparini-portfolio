@@ -45,12 +45,12 @@ const IntroSection = () => {
       transition={{ duration: 1 }}
     >
 
- <h1 className="text-5xl sm:text-5xl md:text-5xl text-center text-black font-tangerine font-bold" style={{ textShadow: '0 0 6px rgba(202, 202, 202, 0.9)' }}>
+ <h1 className="text-5xl sm:text-5xl md:text-7xl text-center text-black font-tangerine text-#001f73" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
         {t("about.intro.greeting")}
       </h1>
 
      <motion.span
-  className="flex items-center justify-center font-tangerine"
+  className="flex items-center justify-center font-cinzel"
   initial={{ opacity: 0, scale: 0.8 }}
   animate={{ opacity: 1, scale: 1 }}
   exit={{ opacity: 0, scale: 0.8 }}
@@ -61,7 +61,7 @@ const IntroSection = () => {
   </span>
 </motion.span>
 
-      <div className="flex gap-4 text-4xl sm:text-5xl md:text-5xl text-#001f73 font-tangerine font-bold" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+      <div className="flex gap-4 text-4xl sm:text-5xl md:text-7xl text-#001f73 font-tangerine" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

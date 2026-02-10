@@ -7,7 +7,7 @@ const Navbar = () => {
   const { i18n } = useTranslation();
 
   return (
-<nav className=" bg-white shadow-none sticky top-0 z-50 font-cinzel bg-#ffffff border-b border-gray-200">      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+<nav className=" bg-white shadow-none py-2sticky top-0 z-50 font-cinzel bg-#ffffff border-b border-gray-200">
         <div className="w-full flex h-16 items-center px-6">
 
         <Link to="/" className="flex items-center space-x-3">
@@ -15,7 +15,7 @@ const Navbar = () => {
         src="/icons/favicon_sg.png"
         alt="logo"
         className="h-9 w-auto"/>        
-        <span className="text-2xl sm:text-4xl md:text-4xl text-black" style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}>Silvia Gasparini - Web Developer</span></Link>
+        <span className="hidden lg:block lg:text-5xl-custom text-black" style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}>Silvia Gasparini - Web Developer</span></Link>
 
         <div className="hidden lg:flex items-center gap-6 justify-end flex-1">
 
@@ -26,9 +26,9 @@ const Navbar = () => {
            <Link to="/Contacts" className="text-black hover:font-bold">Contacts</Link>
           </div>
 
-          <div className="absolute right-4 hidden lg:flex gap-2 font-explora">{["it", "en", "jp"].map((lng) => (
+          <div className="flex gap-2 text-5xl-ricustom">{["it", "en", "jp"].map((lng) => (
           <button key={lng} onClick={() => i18n.changeLanguage(lng)} 
-          className={`min-w-[33px] px-2 py-1 text-sm font-bold rounded-full border transition-all ${i18n.language === lng
+          className={`min-w-[33px] px-2 py-1 text-sm rounded-full border transition-all ${i18n.language === lng
           ? "bg-black text-white border-black"
           : "bg-trasparent text-black border-black hover:bg-black hover:text-white"
           }`}
@@ -39,17 +39,16 @@ const Navbar = () => {
         </div>
         </div>
 
-        <div className="lg:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-2xl text-black justify-end focus:outline-none">
+        <div className="lg:hidden ml-auto">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-5xl-custom text-black justify-end focus:outline-none">
             Menu
           </button>
         </div>
       </div>
-      </div>
        
 
       {isOpen && (
-        <div className="lg:hidden flex flex-col space-y-2 px-4 pb-4 text-3xl">
+        <div className="lg:hidden flex flex-col space-y-3 px-4 pb-4 text-5xl-ricustom">
           <Link to="/" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Home</Link>
           <Link to="/About" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">About</Link>
           <Link to="/Projects" onClick={() => setIsOpen(false)} className="text-black hover:font-bold">Projects</Link>
@@ -61,7 +60,7 @@ const Navbar = () => {
               onClick={() => {i18n.changeLanguage(lng);
               setIsOpen(false); 
               }}
-              className={`min-w-[33px] px-2 py-1 text-sm font-bold rounded-full border transition-all  ${
+              className={`min-w-[33px] px-2 py-1 text-sm rounded-full border transition-all  ${
                 i18n.language === lng
                 ? "bg-black text-white border-black"
                 : "bg-trasparent text-black border-black hover:bg-black hover:text-white"
