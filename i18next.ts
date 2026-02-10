@@ -13,8 +13,8 @@ i18next.use(initReactI18next).init({
           },
         about: {
           intro: {
-            greeting: "Piacere di conoscerti! Sono Silvia!",
-            role: "Full-Stack Developer",
+            greeting: "Piacere di conoscerti, sono Silvia!",
+            role: "Web Developer",
             words: ["Creativa", "Eclettica", "Visionaria"]
           },
         past: {
@@ -52,8 +52,8 @@ i18next.use(initReactI18next).init({
           },
         about: {
           intro: {
-            greeting: "Nice to meet you! I'm Silvia!",
-            role: "Full-Stack Developer",
+            greeting: "Nice to meet you, I'm Silvia!",
+            role: "Web Developer",
             words: ["Creative", "Eclectic", "Visionary"]
           },
           past: {
@@ -92,8 +92,8 @@ i18next.use(initReactI18next).init({
           },
         about: {
           intro: {
-            greeting: "はじめまして！シルヴィアです！",
-            role: "Full-Stack Developer",
+            greeting: "はじめまして、シルヴィアです！",
+            role: "Web Developer",
             words: ["クリエイティブ", "多才", "先見的"]
           },
           past: {
