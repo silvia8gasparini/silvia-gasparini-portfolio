@@ -45,7 +45,7 @@ const IntroSection = () => {
       transition={{ duration: 1 }}
     >
 
- <h1 className="text-5xl sm:text-5xl md:text-7xl text-center text-black font-tangerine text-#001f73" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+ <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine text-#001f73" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
         {t("about.intro.greeting")}
       </h1>
 
@@ -61,7 +61,7 @@ const IntroSection = () => {
   </span>
 </motion.span>
 
-      <div className="flex gap-4 text-4xl sm:text-5xl md:text-7xl text-#001f73 font-tangerine" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-#001f73 font-tangerine" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
