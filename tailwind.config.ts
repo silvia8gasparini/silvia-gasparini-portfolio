@@ -22,8 +22,8 @@ const config: Config = {
       fontSize: {
       '5xl-custom': ['1.4rem', { lineHeight: '1.1' }],
       '5xl-ricustom': ['1.2rem', { lineHeight: '1.1' }],
-      '5xl-tomtom': ['2.4rem', { lineHeight: '1.1' }],
-      '5xl-tomcus': ['2.7rem', { lineHeight: '1.1' }],
+      '5xl-tomtom': ['2.6rem', { lineHeight: '1.1' }],
+      '5xl-tomcus': ['2.9rem', { lineHeight: '1.1' }],
       '4xl-custom': ['2.6rem', { lineHeight: '1.1' }],
       },  
       backgroundImage: {
