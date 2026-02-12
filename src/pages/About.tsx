@@ -16,7 +16,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-white flex flex-col items-center justify-center px-8 pt-15 pb-4 text-gray-800 overflow-hidden">
+    <section className="min-h-screen bg-radial-custom flex flex-col items-center justify-center px-8 pt-15 pb-4 text-gray-800 overflow-hidden">
 
     <AnimatePresence mode="wait">
   {!showContent ? (
