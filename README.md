@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+# 🦊 Silvia Gasparini — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🇮🇹 Italiano
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Il mio portfolio personale: uno spazio che mi rappresenta prima ancora di presentarmi.
+Non una vetrina standard, ma un'esperienza visiva costruita con cura, dove estetica e tecnica si incontrano.
 
-## Expanding the ESLint configuration
+Il tema cambia con le stagioni 🍂❄️🌸☀️
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Tecnologie
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- SCSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Caratteristiche
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Tema stagionale** — animazioni e palette cromatica aggiornate manualmente al cambio di stagione
+- **Multilingua** — disponibile in italiano, inglese e giapponese
+- **Progetti interattivi** — ogni progetto è presentato con descrizione, tecnologie, link GitHub e demo live
+- **Design narrativo** — identità visiva coerente con mascotte animata e animazioni CSS personalizzate
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Deploy
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🚀 [Live](https://silvia-gasparini-portfolio.vercel.app/)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🇬🇧 English
+
+My personal portfolio: a space that represents me before I even say a word.
+Not a standard showcase — a carefully crafted visual experience where aesthetics and code come together.
+
+The theme changes with the seasons 🍂❄️🌸☀️
+
+### Tech Stack
+
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- SCSS
+
+### Features
+
+- **Seasonal theme** — animations and colour palette updated manually with each season
+- **Multilingual** — available in Italian, English and Japanese
+- **Interactive projects** — each project includes description, tech stack, GitHub link and live demo
+- **Narrative design** — consistent visual identity with animated mascot and custom CSS animations
+
+### Deployment
+
+- 🚀 [Live](https://silvia-gasparini-portfolio.vercel.app/)
+
+---
+
+## Autrice / Author
+
+**Silvia Gasparini** — Full-Stack Developer
+[LinkedIn](https://linkedin.com/in/silviagasparini8) · [GitHub](https://github.com/silvia8gasparini)
