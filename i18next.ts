@@ -19,11 +19,11 @@ i18next.use(initReactI18next).init({
           },
         past: {
             title: "Passato",
-            text: "Sono <1>laureata in Lettere Moderne</1> all'Università di Padova, con un breve epilogo a Ca' Foscari.<1/><1/> Ho lavorato tra <1>archivi, biblioteche e uffici</1>. Un mondo fatto di ordine e memoria, che mi ha insegnato <1>rigore, pazienza e attenzione al dettaglio</1>, ma nel tempo ho sentito il bisogno di rimettermi in discussione."
+            text: "Sono <1>laureata in Lettere Moderne</1> all'Università di Padova, con un breve capitolo a Ca' Foscari.<1/><1/> Ho lavorato tra <1>archivi, biblioteche e uffici</1>. Un mondo fatto di ordine e memoria, che mi ha insegnato <1>rigore, pazienza e attenzione al dettaglio</1>, ma nel tempo ho sentito il bisogno di rimettermi in discussione."
             },
         present: {
             title: "Presente",
-            text: "Ho da poco concluso un <1>master Full-Stack Developer</1> presso <2>EPICODE</2>, ma sto continuando il mio percorso per <3>specializzarmi nel front-end</3>.<4/><4/>Voglio consolidare le mie competenze tecniche e progettuali in contesti che abbiano un’anima: <5>ambienti etici, inclusivi, orientati all’innovazione consapevole</5>."
+            text: "Ho frequentato un <1>master professionalizzante Full-Stack Developer</1> presso <2>EPICODE</2>, ma sto continuando il mio percorso per <3>specializzarmi nel front-end</3>.<4/><4/>Voglio consolidare le mie competenze tecniche e progettuali in contesti che abbiano un’anima: <5>ambienti etici, inclusivi, orientati all’innovazione consapevole</5>."
             },
         future: {
             title: "Futuro",
@@ -62,7 +62,7 @@ i18next.use(initReactI18next).init({
           },
           present: {
             title: "Present",
-            text: "I recently completed a <1>Full-Stack Developer master's program</1> at <2>EPICODE</2>, but I’m continuing my journey to <3>specialize in front-end development</3>.<4/><4/>I want to strengthen my technical and design skills in contexts with a soul: <5>ethical, inclusive environments driven by mindful innovation</5>."
+            text: "I completed a <1>Full-Stack Developer professional master program</1> at <2>EPICODE</2>, but I’m continuing my journey to <3>specialize in front-end development</3>.<4/><4/>I want to consolidate my technical and design skills in contexts that have a soul: <5>ethical, inclusive environments oriented towards conscious innovation</5>."
           },
           future: {
             title: "Future",
@@ -102,7 +102,7 @@ i18next.use(initReactI18next).init({
           },
           present: {
             title: "現在",
-            text: "最近、<1>EPICODE</1>で<2>フルスタック・デベロッパーのマスター課程</2>を修了しましたが、さらに<3>フロントエンド分野に特化するための学び</3>を続けています。<4/><4/>私は、<5>倫理的で包摂的、そして意識的なイノベーション</5>を大切にする環境で、自分の技術力とデザイン力をより深めたいと考えています。"
+            text: "<2>EPICODE</2>にて<1>フルスタック開発者の専門マスター</1>を修了しましたが、<3>フロントエンドに特化する</3>ため学び続けています。技術的・デザイン的スキルを、魂のある場所で深めたいと思っています。<4/><4/><5>倫理的で、包括的で、意識ある革新を目指す環境で。</5>"
           },
           future: {
             title: "未来",

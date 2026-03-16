@@ -37,7 +37,7 @@ export default function Contacts() {
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-radial-custom">
       <h1
         className="text-4xl md:text-5xl font-tangerine font-bold text-black mb-10"
-        style={{ textShadow: "0 0 6px rgba(202, 202, 202, 0.9)" }}
+        style={{ textShadow: "0 0 6px rgba(255, 173, 215, 0.8)" }}
       >
         {t("contacts.title")} 
       </h1>

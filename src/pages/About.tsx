@@ -45,7 +45,7 @@ const IntroSection = () => {
       transition={{ duration: 1 }}
     >
 
- <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine text-#001f73" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+ <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
         {t("about.intro.greeting")}
       </h1>
 
@@ -61,7 +61,7 @@ const IntroSection = () => {
   </span>
 </motion.span>
 
-      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-#001f73 font-tangerine" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -113,7 +113,7 @@ const ContentSection = () => {
           transition={{ duration: 1 }}
         >
          
-          <h2 className="text-5xl font-tangerine font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
            <Trans i18nKey="about.past.title">Passato</Trans>
           </h2>
 
@@ -131,7 +131,7 @@ const ContentSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <h2 className="text-5xl font-tangerine font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
             <Trans i18nKey="about.present.title">Presente</Trans>
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
@@ -143,7 +143,7 @@ const ContentSection = () => {
             5: <strong />,
             6: <strong />,
             }}>
-            Ho da poco concluso un <strong /> presso <strong />, ma sto continuando il mio percorso per <strong />.
+            Ho dfrequentato un <strong /> presso <strong />, ma sto continuando il mio percorso per <strong />.
             <br className="hidden md:block" />
             <br className="hidden md:block" />
             Voglio consolidare le mie competenze tecniche e progettuali in contesti che abbiano un’anima:<strong />.
@@ -157,7 +157,7 @@ const ContentSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4 }}
         >
-          <h2 className="text-5xl font-tangerine font-bold text-#001f73 md:w-1/3 text-center md:text-center md:pl-8 pb-15" style={{ textShadow: '0 0 6px rgba(39, 159, 245, 0.46)' }}>
+          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8 pb-15" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
              <Trans i18nKey="about.future.title">Futuro</Trans>
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left">
