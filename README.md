@@ -58,5 +58,5 @@ The theme changes with the seasons 🍂❄️🌸☀️
 
 ## Autrice / Author
 
-**Silvia Gasparini** — Full-Stack Developer
+**Silvia Gasparini** — Front-end Developer
 [LinkedIn](https://linkedin.com/in/silviagasparini8) · [GitHub](https://github.com/silvia8gasparini)
