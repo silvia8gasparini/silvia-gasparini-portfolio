@@ -43,7 +43,7 @@ const TechSections = () => {
           transition={{ duration: 0.8, delay: idx * 0.2 }}
           className=" p-8"
         >
-          <h3 className="text-5xl font-tangerine font-bold text-black mb-6 text-center"style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
+          <h3 className="text-5xl font-tangerine font-bold text-black mb-6 text-center"style={{ textShadow: '0 0 6px rgba(252, 206, 230, 0.8)' }}>
             {category}
           </h3>
           <div className="flex flex-wrap justify-center gap-6">

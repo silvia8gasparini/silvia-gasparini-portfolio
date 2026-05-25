@@ -4,8 +4,7 @@
 
 ## 🇮🇹 Italiano
 
-Il mio portfolio personale: uno spazio che mi rappresenta prima ancora di presentarmi.
-Non una vetrina standard, ma un'esperienza visiva costruita con cura, dove estetica e tecnica si incontrano.
+Il mio portfolio personale: uno spazio che mi rappresenta e un'esperienza visiva costruita con cura, dove estetica e tecnica si incontrano.
 
 Il tema cambia con le stagioni 🍂❄️🌸☀️
 
@@ -31,8 +30,7 @@ Il tema cambia con le stagioni 🍂❄️🌸☀️
 
 ## 🇬🇧 English
 
-My personal portfolio: a space that represents me before I even say a word.
-Not a standard showcase — a carefully crafted visual experience where aesthetics and code come together.
+My personal portfolio: a space that represents me and a visual experience built with care, where aesthetics and technique meet.
 
 The theme changes with the seasons 🍂❄️🌸☀️
 
@@ -58,5 +56,5 @@ The theme changes with the seasons 🍂❄️🌸☀️
 
 ## Autrice / Author
 
-**Silvia Gasparini** — Front-end Developer
+**Silvia Gasparini** — Full-Stack Developer
 [LinkedIn](https://linkedin.com/in/silviagasparini8) · [GitHub](https://github.com/silvia8gasparini)

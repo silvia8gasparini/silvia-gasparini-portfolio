@@ -45,7 +45,7 @@ const IntroSection = () => {
       transition={{ duration: 1 }}
     >
 
- <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
+ <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(252, 206, 230, 0.8)' }}>
         {t("about.intro.greeting")}
       </h1>
 
@@ -61,7 +61,7 @@ const IntroSection = () => {
   </span>
 </motion.span>
 
-      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
+      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(252, 206, 230, 0.8)' }}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -106,81 +106,76 @@ const ContentSection = () => {
       </motion.div>
       <div className="flex flex-col gap-16 w-full">
 
+       {/* Passato */}
         <motion.div
-          className="flex flex-col md:flex-row items-center gap-6"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+         className="flex flex-col md:flex-row items-center gap-6"
+         initial={{ opacity: 0, x: -100 }}
+         animate={{ opacity: 1, x: 0 }}
+         transition={{ duration: 1 }}
+       >
+        <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8"
+            style={{ textShadow: "0 0 6px rgba(252, 206, 230, 0.8)" }}
         >
-         
-          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
-           <Trans i18nKey="about.past.title">Passato</Trans>
-          </h2>
-
-          <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
-         <Trans i18nKey="about.past.text">Sono <strong>laureata in Lettere Moderne</strong> all'Università di Padova, con un breve epilogo a Ca' Foscari.  
-          <br className="hidden md:block" />
-          Ho lavorato tra <strong>archivi, biblioteche e uffici</strong>. Un mondo fatto di ordine e memoria, che mi ha insegnato <strong>rigore, pazienza e attenzione al dettaglio</strong>, ma nel tempo ho sentito il bisogno di rimettermi in discussione.
-          </Trans> 
-          </p>
+          <Trans i18nKey="about.past.title" />
+        </h2>
+        <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
+          <Trans i18nKey="about.past.text"
+            components={{
+            1: <strong />,
+            2: <br className="hidden md:block" />,
+            }}
+          />
+        </p>
         </motion.div>
-
-        <motion.div
-          className="flex flex-col md:flex-row-reverse items-center gap-8"
+       
+        {/* Presente */}
+         <motion.div className="flex flex-col md:flex-row-reverse items-center gap-8"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
-        >
-          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
-            <Trans i18nKey="about.present.title">Presente</Trans>
+          >
+          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8"
+              style={{ textShadow: "0 0 6px rgba(252, 206, 230, 0.8)" }}
+          >
+          <Trans i18nKey="about.present.title" />
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left md:pl-8">
-          <Trans i18nKey="about.present.text"components={{
+          <Trans i18nKey="about.present.text"
+            components={{
             1: <strong />,
             2: <strong />,
             3: <strong />,
             4: <br className="hidden md:block" />,
             5: <strong />,
-            6: <strong />,
-            }}>
-            Ho dfrequentato un <strong /> presso <strong />, ma sto continuando il mio percorso per <strong />.
-            <br className="hidden md:block" />
-            <br className="hidden md:block" />
-            Voglio consolidare le mie competenze tecniche e progettuali in contesti che abbiano un’anima:<strong />.
-          </Trans>
+            }}
+            />
           </p>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-col md:flex-row items-center gap-8"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.4 }}
-        >
-          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8 pb-15" style={{ textShadow: '0 0 6px rgba(255, 173, 215, 0.8)' }}>
-             <Trans i18nKey="about.future.title">Futuro</Trans>
+          </motion.div>
+       
+        {/* Futuro */}
+          <motion.div className="flex flex-col md:flex-row items-center gap-8"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.4 }}
+          >
+          <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8 pb-15"
+              style={{ textShadow: "0 0 6px rgba(252, 206, 230, 0.8)" }}
+          >
+          <Trans i18nKey="about.future.title" />
           </h2>
           <p className="text-lg font-ysabeau leading-relaxed md:w-2/3 text-center md:text-left">
-          <Trans i18nKey="about.future.text" components={{
+          <Trans i18nKey="about.future.text"
+            components={{
             1: <strong />,
             2: <strong />,
             3: <br className="hidden md:block" />,
             4: <strong />,
             5: <strong />,
-            6: <strong />
-            }}>
-            Il mio obiettivo è focalizzato sul <strong /> e sul <strong />,: voglio poter dare forma concreta alle mie idee progettuali, curando non solo il <strong /> e il <strong />, ma anche il <strong />.
-            <br className="hidden md:block" />
-            <br className="hidden md:block" />
-            Coniugo il mio background umanistico con le competenze tecniche per progettare<strong />, capaci di dialogare con chi le usa.
-            <br className="hidden md:block" />
-            <br className="hidden md:block" />
-            Sogno un web meno standardizzato e più empatico, dove <strong /> abbiano lo spazio per esprimersi fuori dagli schemi.
-            Voglio crescere come UX/UI Designer per rendere il digitale <strong />.
-            </Trans>
-          </p>
-        </motion.div>
-           
+            6: <strong />,
+            }}
+            />
+            </p>
+          </motion.div> 
       </div>
       
     </motion.div>

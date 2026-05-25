@@ -27,7 +27,7 @@ const config: Config = {
       '4xl-custom': ['2.6rem', { lineHeight: '1.1' }],
       },  
       backgroundImage: {
-      'radial-custom': 'radial-gradient(circle, #FFF0FD 20%, #fff7fe 30%, #ffffff 100%)',
+      'radial-custom': 'radial-gradient(circle, #FFF0FA 20%, #fff7fe 30%, #ffffff 100%)',
       },
     },
   },
