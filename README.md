@@ -4,7 +4,7 @@
 
 ## 🇮🇹 Italiano
 
-Il mio portfolio personale: uno spazio che mi rappresenta e un'esperienza visiva costruita con cura, dove estetica e tecnica si incontrano.
+Il mio portfolio personale: uno spazio che mi rappresenta e un'esperienza visiva costruita con cura.
 
 Il tema cambia con le stagioni 🍂❄️🌸☀️
 
@@ -30,7 +30,7 @@ Il tema cambia con le stagioni 🍂❄️🌸☀️
 
 ## 🇬🇧 English
 
-My personal portfolio: a space that represents me and a visual experience built with care, where aesthetics and technique meet.
+My personal portfolio: a space that represents me and a visual experience built with care.
 
 The theme changes with the seasons 🍂❄️🌸☀️
 
