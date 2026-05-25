@@ -24,11 +24,11 @@ i18next.use(initReactI18next).init({
           present: {
             title: "Presente",
             text: "Ho conseguito un <1>master professionalizzante Full-Stack Developer</1> presso <2>EPICODE</2>, dove ho acquisito competenze solide sia lato client che lato server. Sto continuando a rafforzare il mio stack tecnico, dalla <3>progettazione di interfacce all'architettura back-end</3>, con l'obiettivo di operare in autonomia sull'intero ciclo di sviluppo di un prodotto digitale.<4/><4/>Cerco contesti <5>etici, inclusivi e orientati a un'innovazione consapevole</5>."
-          },
+            },
           future: {
             title: "Futuro",
             text: "Voglio affermarmi come <1>sviluppatrice Full-Stack</1> con una forte sensibilità per il design e l'esperienza utente. Mi interessa che un prodotto sia funzionale e dotato di <2>forma, coerenza e significato</2>, dal database all'interfaccia.<3/><3/>Porto con me un <1>background umanistico</1> che mi permette di progettare soluzioni tecniche <4>accessibili, inclusive e capaci di comunicare davvero</4> con chi le usa.<3/><3/>La mia visione è un web <5>meno standardizzato e più empatico</5>, dove la tecnologia si mette al servizio delle persone. Voglio contribuire a costruirlo con <6>codice, design e intenzione</6>."
-          }
+            }
           },
         projects: {
           capstone: "Una web app che intreccia libri, tè e stagioni giapponesi. Il mio capstone project: un e-commerce librario ispirato all’estetica wabi-sabi, dove ogni colore racconta una storia.",
@@ -100,14 +100,14 @@ i18next.use(initReactI18next).init({
             title: "過去",
             text: "<1>Ca' Foscariで東洋言語学</1>を学んだ後、パドヴァ大学で<1>現代文学の学位</1>を取得しました。<2/><2/><1>文書館、図書館、オフィス</1>の中でキャリアを積んできました。そこで培ったのは、<1>方法論的な厳密さ</1>、<1>細部への注意力</1>、そして<1>複雑な情報システムを管理する能力</1>です。これらのスキルは、今日のソフトウェア開発に直接活かされています。"
           },          
-          },
           present: {
             title: "現在",
             text: "<2>EPICODE</2>にて<1>フルスタック開発者の専門修士課程</1>を修了し、クライアントサイドとサーバーサイドの両方において確かなスキルを習得しました。<3>インターフェース設計からバックエンドアーキテクチャ</3>まで、デジタルプロダクトの開発サイクル全体を自律的に担うことを目標に、技術スタックを強化し続けています。<4/><4/><5>倫理的で、インクルーシブで、意識的なイノベーションを志向する環境</5>を求めています。"
           },
           future: {
             title: "未来",
-            text: "デザインとユーザー体験への強い感性を持つ<1>フルスタック開発者</1>として自分を確立していきたいと考えています。プロダクトが機能的であるだけでなく、データベースからインターフェースに至るまで、<2>形・一貫性・意味</2>を持つものであることを大切にしています。<3/><3/><1>人文学的なバックグラウンド</1>は、<4>アクセシブルでインクルーシブ、そして真に対話できる</4>技術的ソリューションを設計する力を与えてくれます。<3/><3/><5>画一化されたウェブではなく、より共感的なウェブ</5>を目指しています。テクノロジーが人に寄り添う場所を、<6>コード・デザイン・意志</6>を持って築いていきたいと思います。"          }
+            text: "デザインとユーザー体験への強い感性を持つ<1>フルスタック開発者</1>として自分を確立していきたいと考えています。プロダクトが機能的であるだけでなく、データベースからインターフェースに至るまで、<2>形・一貫性・意味</2>を持つものであることを大切にしています。<3/><3/><1>人文学的なバックグラウンド</1>は、<4>アクセシブルでインクルーシブ、そして真に対話できる</4>技術的ソリューションを設計する力を与えてくれます。<3/><3/><5>画一化されたウェブではなく、より共感的なウェブ</5>を目指しています。テクノロジーが人に寄り添う場所を、<6>コード・デザイン・意志</6>を持って築いていきたいと思います。"          
+          }
         },
          projects: {
           capstone: "本、お茶、そして日本の七十二候を結びつけたWebアプリ。私のキャップストーンプロジェクト：侘び寂び美学にインスパイアされたブック・コマース。色が物語を語ります。",
@@ -126,4 +126,4 @@ i18next.use(initReactI18next).init({
       }
     }
   }
-);
+});
