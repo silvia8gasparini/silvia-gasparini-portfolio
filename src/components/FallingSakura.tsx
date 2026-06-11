@@ -7,7 +7,7 @@ const FallingSakura = () => {
     <div className={`set ${setClass}`}>
       {Array.from({ length: 8 }).map((_, i) => (
         <div className="sakura" key={`${setClass}-${i}`}>
-          <img src={sakuraImgs[i % 4]} alt="leaf" />
+          <img src={sakuraImgs[i % 4]} alt="sakura" />
         </div>
       ))}
     </div>

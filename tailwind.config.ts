@@ -9,15 +9,11 @@ const config: Config = {
     extend: {
       fontFamily: {
         beau: ['"Beau Rivage"', 'cursive'],
-        waterfall: ['"Waterfall"', 'cursive'],
         bonheur: ['"Bonheur Royale"', 'cursive'],
         explora: ['"Explora"', 'cursive'],
-        pompiere: ['"Pompiere"', 'sans-serif'],
         ysabeau: ['"Ysabeau Infant"', 'sans-serif'],
         tangerine: ["Tangerine", 'cursive'],
         cinzel: ['"Cinzel Decorative"', 'serif'],
-        baskerville: ['"Baskervville SC"', 'serif'],
-        bellefair: ['"Bellefair"', 'serif'],
       },
       fontSize: {
       '5xl-custom': ['1.4rem', { lineHeight: '1.1' }],
@@ -27,7 +23,7 @@ const config: Config = {
       '4xl-custom': ['2.6rem', { lineHeight: '1.1' }],
       },  
       backgroundImage: {
-      'radial-custom': 'radial-gradient(circle, #FFF0FA 20%, #fff7fe 30%, #ffffff 100%)',
+            'radial-custom': 'radial-gradient(circle, #FFEBD4 20%, #FDF5EB 30%, #ffffff 100%)'
       },
     },
   },

@@ -45,7 +45,7 @@ const IntroSection = () => {
       transition={{ duration: 1 }}
     >
 
- <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(252, 206, 230, 0.8)' }}>
+ <h1 className="text-5xl-tomtom sm:text-5xl md:text-7xl text-center text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(253, 177, 89, 0.8)' }}>
         {t("about.intro.greeting")}
       </h1>
 
@@ -56,12 +56,12 @@ const IntroSection = () => {
   exit={{ opacity: 0, scale: 0.8 }}
   transition={{ duration: 1 }}
 >
-  <span className="text-5xl-tomcus md:text-7xl font-bold text-black text-center">
+  <span className="text-5xl-tomcus md:text-7xl font-bold text-black text-center" style={{ textShadow: '0 0 6px rgba(253, 177, 89, 0.8)' }}>
     {t("about.intro.role")}
   </span>
 </motion.span>
 
-      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(252, 206, 230, 0.8)' }}>
+      <div className="flex gap-4 text-5xl-tomtom md:text-7xl text-black font-tangerine" style={{ textShadow: '0 0 6px rgba(253, 177, 89, 0.8)' }}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -114,7 +114,7 @@ const ContentSection = () => {
          transition={{ duration: 1 }}
        >
         <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8"
-            style={{ textShadow: "0 0 6px rgba(252, 206, 230, 0.8)" }}
+            style={{ textShadow: "0 0 6px rgba(253, 177, 89, 0.8)" }}
         >
           <Trans i18nKey="about.past.title" />
         </h2>
@@ -135,7 +135,7 @@ const ContentSection = () => {
           transition={{ duration: 1.2 }}
           >
           <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8"
-              style={{ textShadow: "0 0 6px rgba(252, 206, 230, 0.8)" }}
+              style={{ textShadow: "0 0 6px rgba(253, 177, 89, 0.8)" }}
           >
           <Trans i18nKey="about.present.title" />
           </h2>
@@ -159,7 +159,7 @@ const ContentSection = () => {
             transition={{ duration: 1.4 }}
           >
           <h2 className="text-5xl font-tangerine font-bold text-black md:w-1/3 text-center md:text-center md:pl-8 pb-15"
-              style={{ textShadow: "0 0 6px rgba(252, 206, 230, 0.8)" }}
+              style={{ textShadow: "0 0 6px rgba(253, 177, 89, 0.8)" }}
           >
           <Trans i18nKey="about.future.title" />
           </h2>
